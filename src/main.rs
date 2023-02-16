@@ -3,6 +3,7 @@ mod enum_les6;
 mod first_les;
 mod exceptions_les;
 mod generic_trait_les;
+mod traits_les;
 
 use std::error::Error;
 use std::fs::File;
@@ -12,11 +13,13 @@ use crate::exceptions_les::{last_char_of_first_line, test_less_propagation_error
 use crate::first_les::first_lesson;
 use crate::generic_trait_les::{test_generic_struct, test_largest_generic};
 use crate::struct_les::get_persons;
+use crate::traits_les::test;
 
 fn main() {
     let text = test_less_propagation_errors().expect("!");
     println!("{}", last_char_of_first_line(text.as_str()).expect("Not found line"));
     test_generic_struct();
+    test();
 }
 
 fn test_enum_les() {
