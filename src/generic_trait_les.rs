@@ -62,7 +62,7 @@ pub fn largest<T: PartialOrd>(list: &[T]) -> &T {
             largest = i;
         }
     }
-    return largest;
+     largest
 }
 
 pub fn test_largest_generic() {

@@ -24,7 +24,7 @@ pub fn enum_with_construct() {
      };
      println!(" address={}", localhost.address);*/
 
-    let localHost = IpAddr::V4(127, 0, 0, 1);
+    //let localHost = IpAddr::V4(127, 0, 0, 1);
 }
 
 
@@ -52,10 +52,10 @@ pub fn matcher() -> i32 {
 
 pub fn test_option() -> u32 {
     let a: u32 = 444;
-    let option_null = None;
+    //let option_null = None;
     let option_b = Some(444);
     //bad operations:
-    option_null == option_b;
+    //option_null == option_b;
     //a + option_b == 888
 
     //match:
